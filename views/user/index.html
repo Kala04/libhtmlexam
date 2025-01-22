@@ -1,0 +1,59 @@
+<link href="/views/layout/header.html"/>
+<link rel="stylesheet" href="/public/css/style.css">
+<link rel="stylesheet" href="/public/css/popular_books.css">
+
+<div id="message"></div> 
+<div class="container mt-4">
+    <div class="slider-container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="Library 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/public/img/home2.jpg" class="d-block w-100" alt="Library 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/public/img/home3.jpg" class="d-block w-100" alt="Library 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="popular-books-container">
+        <center><h3>Popular Books</h3></center>
+       
+            <div class="card-deck">
+             
+                    <div class="card">
+                        <img src="public/img/1716662780873.jpg" class="card-img-top" alt="book_name">
+                        <div class="card-body">
+                            <h5 class="card-title" id="book_name">book_name</h5>
+                            <p class="card-text"><strong>Author:</strong> book_author</p>
+                            <p class="card-text"><strong>Category:</strong> book_category </p>
+                            <p class="card-text"><strong>Price:</strong>  book_price</p>
+                            <p class="card-text"><strong>Quantity:</strong> book_quantity </p>
+                            <p class="card-text"><strong>Purchases:</strong>book_purchase</p>
+                            <button class="btn btn-info" onclick="viewBook('book_id')">View</button>
+                            <button class="btn btn-info" onclick="addToCart('book_id', 'book_name')">Add to Cart</button>
+
+                        </div>
+                    </div>
+            
+            </div>
+       
+            <p>No popular books available at the moment.</p>
+     
+    </div>
+</div>
+<link href="/views/layout/footer.html"/>
+<script src="/js/index.js"></script>
+
